@@ -12,25 +12,25 @@ Additional datasets can be found [here](https://jmcauley.ucsd.edu/data/amazon/).
 # Approach
 # 1.  Rank-Based Product Recommendation
 
-Objective: Recommend popular products to new customers and solve the cold start problem. 
-Method:            
-    Calculate average and total ratings for each product.
-    Sort products by average rating.
-    Recommend the top 5 products with at least 50/100 ratings.
+- Objective: Recommend popular products to new customers and solve the cold start problem. 
+- Method:            
+   -  Calculate average and total ratings for each product.
+   -  Sort products by average rating.
+   -  Recommend the top 5 products with at least 50/100 ratings.
 # 2.  Similarity-Based Collaborative Filtering
 
 - Objective: Provide personalized recommendations by finding similar users.
 - Method:
-    Convert user IDs to integers.
-    Compute similarity scores between users using cosine similarity.
-    Recommend products interacted with by similar users but not by the original user.
+    - Convert user IDs to integers.
+    - Compute similarity scores between users using cosine similarity.
+    - Recommend products interacted with by similar users but not by the original user.
  # 3.  Model-Based Collaborative Filtering
 
-Objective: Offer personalized recommendations addressing sparsity and scalability challenges.
-Method:
-    Convert rating matrix to a compressed sparse row (CSR) matrix.
-    Perform Singular Value Decomposition (SVD) to reduce dimensionality.
-    Calculate predicted ratings and recommend top 5 products based on these ratings.
-Evaluation:
-    Compare average actual and predicted ratings.
-    Compute RMSE to assess model accuracy.
+- Objective: Offer personalized recommendations addressing sparsity and scalability challenges.
+- Method:
+    - Convert rating matrix to a compressed sparse row (CSR) matrix.
+    - Perform Singular Value Decomposition (SVD) to reduce dimensionality.
+    - Calculate predicted ratings and recommend top 5 products based on these ratings.
+- Evaluation:
+    - Compare average actual and predicted ratings.
+    - Compute RMSE to assess model accuracy.

@@ -10,21 +10,21 @@ The system uses an Amazon dataset of user ratings for electronic products, avail
 Additional datasets can be found [here](https://jmcauley.ucsd.edu/data/amazon/).
 
 # Approach
-1. # Rank-Based Product Recommendation
+# 1.  Rank-Based Product Recommendation
 
-Objective: Recommend popular products to new customers and solve the cold start problem.
+Objective: Recommend popular products to new customers and solve the cold start problem. /n
 Method:
     Calculate average and total ratings for each product.
     Sort products by average rating.
     Recommend the top 5 products with at least 50/100 ratings.
-2. # Similarity-Based Collaborative Filtering
+# 2.  Similarity-Based Collaborative Filtering
 
 Objective: Provide personalized recommendations by finding similar users.
 Method:
     Convert user IDs to integers.
     Compute similarity scores between users using cosine similarity.
     Recommend products interacted with by similar users but not by the original user.
- 3. # Model-Based Collaborative Filtering
+ # 3.  Model-Based Collaborative Filtering
 
 Objective: Offer personalized recommendations addressing sparsity and scalability challenges.
 Method:
